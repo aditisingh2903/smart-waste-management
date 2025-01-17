@@ -9,19 +9,19 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Custom dustbin icons based on status
 const binIcons = {
   Full: L.icon({
-    iconUrl: '', // Replace with your own icon URL
+    iconUrl: 'red dustbin.jpg', // Replace with your own icon URL
     iconSize: [40, 40], // Adjust size
     iconAnchor: [20, 40],
     popupAnchor: [0, -35],
   }),
   Moderate: L.icon({
-    iconUrl: '', // Replace with your own icon URL
+    iconUrl: 'yellow dustbin.jpg', // Replace with your own icon URL
     iconSize: [40, 40],
     iconAnchor: [20, 40],
     popupAnchor: [0, -35],
   }),
   Empty: L.icon({
-    iconUrl: '', // Replace with your own icon URL
+    iconUrl: 'green bin.jpg', // Replace with your own icon URL
     iconSize: [40, 40],
     iconAnchor: [20, 40],
     popupAnchor: [0, -35],
