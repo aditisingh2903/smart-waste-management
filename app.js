@@ -6,23 +6,42 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
+// Custom dustbin icons based on status
+const binIcons = {
+  Full: L.icon({
+    iconUrl: 'https://tinyurl.com/y63rn3xc', // Replace with your own icon URL
+    iconSize: [40, 40], // Adjust size
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -35],
+  }),
+  Moderate: L.icon({
+    iconUrl: 'https://tinyurl.com/ayzavww6', // Replace with your own icon URL
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -35],
+  }),
+  Empty: L.icon({
+    iconUrl: 'https://shorturl.at/VNtPa', // Replace with your own icon URL
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -35],
+  }),
+};
+
 // Hardcoded bin locations near BIT Durg
 const bins = [
   { lat: 21.1909, lng: 81.2849, status: 'Full' },
   { lat: 21.1912, lng: 81.2835, status: 'Moderate' },
-  { lat: 21.1905, lng: 81.2850, status: 'Empty' }
+  { lat: 21.1905, lng: 81.2850, status: 'Empty' },
+  { lat: 21.1915, lng: 81.2839, status: 'Full' },
+  { lat: 21.1920, lng: 81.2842, status: 'Moderate' },
+  { lat: 21.1917, lng: 81.2853, status: 'Empty' },
+  { lat: 21.1907, lng: 81.2837, status: 'Full' },
 ];
 
-// Function to get marker color based on status
-function getMarkerColor(status) {
-  return status === 'Full' ? 'red' : status === 'Moderate' ? 'yellow' : 'green';
-}
-
-// Add markers to the map
-bins.forEach(bin => {
-  L.circleMarker([bin.lat, bin.lng], {
-    color: getMarkerColor(bin.status),
-    radius: 10,
-    fillOpacity: 0.8
-  }).addTo(map).bindPopup(`Status: ${bin.status}`);
+// Add bins with custom icons
+bins.forEach((bin, index) => {
+  L.marker([bin.lat, bin.lng], { icon: binIcons[bin.status] })
+    .addTo(map)
+    .bindPopup(`<b>Bin ${index + 1}</b><br>Status: ${bin.status}`);
 });
