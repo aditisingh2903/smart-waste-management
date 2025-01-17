@@ -9,19 +9,19 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Custom dustbin icons based on status
 const binIcons = {
   Full: L.icon({
-    iconUrl: 'https://www.flaticon.com/free-icon/delete_4980658', // Replace with your own icon URL
+    iconUrl: '', // Replace with your own icon URL
     iconSize: [40, 40], // Adjust size
     iconAnchor: [20, 40],
     popupAnchor: [0, -35],
   }),
   Moderate: L.icon({
-    iconUrl: 'https://www.flaticon.com/free-icon/dustbin_17967321', // Replace with your own icon URL
+    iconUrl: '', // Replace with your own icon URL
     iconSize: [40, 40],
     iconAnchor: [20, 40],
     popupAnchor: [0, -35],
   }),
   Empty: L.icon({
-    iconUrl: 'https://www.flaticon.com/free-icon/dustbin_2991055', // Replace with your own icon URL
+    iconUrl: '', // Replace with your own icon URL
     iconSize: [40, 40],
     iconAnchor: [20, 40],
     popupAnchor: [0, -35],
