@@ -9,19 +9,19 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Custom dustbin icons based on status
 const binIcons = {
   Full: L.icon({
-    iconUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.pinterest.com%2Fpin%2Ftrash-can-clipart-transparent-png-hd-red-trash-can-trash-can-recyclable-garbage-green-trash-png-image-for-free-download-in-2023--1063271793257228876%2F&psig=AOvVaw2fhY95PMlkm4pia-tXasUz&ust=1737194583008000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjv7KTA_IoDFQAAAAAdAAAAABAE', // Replace with your own icon URL
+    iconUrl: 'https://www.flaticon.com/free-icon/delete_4980658', // Replace with your own icon URL
     iconSize: [40, 40], // Adjust size
     iconAnchor: [20, 40],
     popupAnchor: [0, -35],
   }),
   Moderate: L.icon({
-    iconUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Fpremium-psd%2Fyellow-color-plastic-waste-bin-isolated-transparent-background_357612659.htm&psig=AOvVaw3AHy9VYax6NyV1lIP4ff6W&ust=1737194658714000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKj40c3A_IoDFQAAAAAdAAAAABAE', // Replace with your own icon URL
+    iconUrl: 'https://www.flaticon.com/free-icon/dustbin_17967321', // Replace with your own icon URL
     iconSize: [40, 40],
     iconAnchor: [20, 40],
     popupAnchor: [0, -35],
   }),
   Empty: L.icon({
-    iconUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Frecycle-bin-sticker-png-green-garbage-bin-icon--228979962298337723%2F&psig=AOvVaw0izVOfpS8tZZii5yAGLD1u&ust=1737194716635000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiK-OHA_IoDFQAAAAAdAAAAABAE', // Replace with your own icon URL
+    iconUrl: 'https://www.flaticon.com/free-icon/dustbin_2991055', // Replace with your own icon URL
     iconSize: [40, 40],
     iconAnchor: [20, 40],
     popupAnchor: [0, -35],
