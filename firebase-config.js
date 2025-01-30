@@ -7,6 +7,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyDL2nJLA1KpX0Fp6uXqLbPZsYycSQ8-ry0",
   authDomain: "smart-waste-management-s-85456.firebaseapp.com",
   projectId: "smart-waste-management-s-85456",
+  databaseURL: "https://smart-waste-management-s-85456-default-rtdb.firebaseio.com/",  
   storageBucket: "smart-waste-management-s-85456.appspot.com",
   messagingSenderId: "1027665208209",
   appId: "1:1027665208209:web:5acb16e7f5d7c8bbae3030",
