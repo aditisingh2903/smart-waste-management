@@ -1,4 +1,4 @@
-import { fetchBinData } from "./firebase-config.js"; // Import Firebase function
+import { database, ref, onValue } from "./firebase-config.js"; // Import Firebase function
 // Initialize the map centered on BIT Durg
 const map = L.map('map').setView([21.1909, 81.2849], 16);
 
